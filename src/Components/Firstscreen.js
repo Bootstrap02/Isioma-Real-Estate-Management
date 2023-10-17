@@ -16,7 +16,7 @@ const Firstscreen = () => {
   };
 
   const backgroundImageStyle = {
-    backgroundImage: `url(${images.homepage})`,
+    backgroundImage: `url(${images.picture.homepage})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -24,7 +24,7 @@ const Firstscreen = () => {
   };
 
   return (
-    <div className="flex flex-col w-[100%]">
+    <div className="  flex-1 flex flex-col ">
       <div className=" flex  flex-col" style={backgroundImageStyle}>
       <div className="mb-[12rem]">
       <Suspense  fallback={<div>Loading...</div>}>
@@ -32,19 +32,19 @@ const Firstscreen = () => {
       </Suspense>
       </div>
         <div
-          className="container flex   max-lg:flex-col padding    flex-row justify-between p-4"
+          className=" flex   max-lg:flex-col    flex-row justify-between p-4"
           style={{ minHeight: "40vh" }}
         >
-          <div className="flex  flex-col justify-center items-center max-lg:hidden rounded-lg m-4 px-2 py-4 gap-8 w-fit-content border border-[#B59410] bg-[#000000c4]">
+          <div className="  flex  flex-col justify-center items-center max-lg:hidden rounded-lg m-4 px-2 py-4 gap-8 w-fit-content border border-[#B59410] bg-[#000000c4]">
             <a href="#">
-              <img src={images.twitter} width={20} height={13} loading="lazy" />
+              <img src={images.picture.twitter} width={20} height={13} loading="lazy" />
             </a>
             <a
               href="https://instagram.com/louisjoseph7969?igshid=NzZlODBkYWE4Ng=="
               target="_blank"
             >
               <img
-                src={images.instagram}
+                src={images.picture.instagram}
                 width={20}
                 height={13}
                 loading="lazy"
@@ -52,7 +52,7 @@ const Firstscreen = () => {
             </a>
             <a href="https://www.linkedin.com/in/louis-joseph-634558153/">
               <img
-                src={images.linkedin}
+                src={images.picture.linkedin}
                 width={20}
                 height={13}
                 loading="lazy"
@@ -60,16 +60,16 @@ const Firstscreen = () => {
             </a>
             <a href="https://m.facebook.com/profile.php/?id=100011187841047">
               <img
-                src={images.facebook}
+                src={images.picture.facebook}
                 width={20}
                 height={13}
                 loading="lazy"
               />
             </a>
           </div>
-          <div className="flex flex-row items-start m-4  py-2  justify-center border border-[#d4af37]  bg-[#000000c4] h-[100px] rounded-lg">
+          <div className=" flex flex-row items-start m-4  py-2  justify-center border border-[#d4af37]  bg-[#000000c4]  rounded-lg">
             <div className="px-2">
-              <img src={images.star} width={20} height={13} loading="lazy" />
+              <img src={images.picture.star} width={20} height={13} loading="lazy" />
             </div>
             <div
               className="flex justify-center items-center flex-wrap"
@@ -85,7 +85,7 @@ const Firstscreen = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-end max-lg:justify-center mx-4 pr-4 ">
+          <div className=" flex items-center justify-end max-lg:justify-center mx-4 pr-4 ">
             <button
               className="px-4 py-2 rounded-xl   text-slate-950 bg-[#00A4AD] border border-[#504700] "
               onClick={openModals}
@@ -101,14 +101,14 @@ const Firstscreen = () => {
           Visit us @: 23 rd, Gwagwalada, Abuja, Nigeria.
         </div>
       </div>
-      <div className="bg-[#F3EEFF] rounded-lg shadow-lg my-8 mx-4 flex flex-col ">
+      <div className= "container bg-[#F3EEFF] rounded-lg shadow-lg my-8 mx-4 flex flex-col ">
         <div
           className="text-bold text-4xl underline flex justify-center m-4 mx-8 px-4 pt-4"
           style={{ fontFamily: "youngSerif" }}
         >
           <h1>Hot Deals</h1>
         </div>
-        <div className="bg-[#29231E] rounded-xl max-lg:flex-col padding  border m-4 mx-8 px-8 py-12 text-white">
+        <div className="container bg-[#29231E] rounded-xl max-lg:flex-col p-4  border m-4  text-white">
           <div className="flex flex-row max-lg:flex-col ">
             <div className="text-2xl  max-lg:w-[100%] p-4 ">
               <h2>
@@ -117,9 +117,9 @@ const Firstscreen = () => {
                 </strong>
               </h2>
             </div>
-            <div className="rounded-full bg-[#DA9352] ml-auto  p-4  max-lg:items-center max-lg:ml-[none] ">
+            <div className="rounded-full bg-[#DA9352] ml-auto m-2  p-4  max-lg:items-center max-lg:ml-[none] ">
               <img
-                src={images.discount}
+                src={images.picture.discount}
                 width={100}
                 height={150}
                 loading="lazy"
@@ -127,10 +127,10 @@ const Firstscreen = () => {
             </div>
           </div>
 
-          <div className="flex flex-row justify-between max-lg:flex-col">
+          <div className="flex justify-between max-lg:flex-col  ">
             <div>
-              <div className="w-[90%] p-4">
-                <h5>
+    
+                <h5 className="w-[80%] max-lg:w-full">
                   Welcome to our "Hot Deals" section, where you'll find
                   exclusive opportunities to snag incredible real estate deals.
                   Whether you're a first-time buyer, an experienced investor, or
@@ -150,34 +150,36 @@ const Firstscreen = () => {
                   your elegantly appointed room and unwind in blissful
                   tranquility.
                 </h5>
-              </div>
+      
             </div>
-            <div className="w-[60%] max-lg:w-[100%] m-4">
+            
+              <div className="w-[60%] p-4 max-lg:w-full m-4 max-lg:m-1">
               <Suspense fallback={<div>Loading...</div>}>
                 <Gallery />
               </Suspense>
+            
             </div>
           </div>
           <div className="flex flex-row items-center ">
-            <div className="rounded-full bg-[#DA9352] mr-auto p-4 max-lg:w-[50%] ">
+            <div className="rounded-full bg-[#DA9352] mr-auto  m-2 p-4max-lg:items-center max-lg:mr-[none]  ">
               <img
-                src={images.discant}
+                src={images.picture.discant}
                 width={100}
                 height={150}
                 loading="lazy"
               />
             </div>
             <div className="mr-6  max-lg:w-[50%]">
-              <img src={images.wow} width={250} height={200} loading="lazy" />
+              <img src={images.picture.wow} width={250} height={200} />
             </div>
           </div>
           <div className="flex flex-row justify-between max-lg:flex-col">
-            <div className="w-[60%]  mx-4 my-8 max-lg:w-[100%] ">
+            <div className="w-[60%] p-4 mx-4 my-8 max-lg:w-full max-lg:m-1 ">
               <Suspense fallback={<div>Loading...</div>}>
                 <Gallery2 />
               </Suspense>
             </div>
-            <div className="w-[50%] mt-4 ml-4 p-4 max-lg:w-[100%]">
+            <div className="w-[50%]  p-4 max=lg:p-1 max-lg:w-full">
               <h5>
                 Welcome to our "Hot Deals" section, where you'll find exclusive
                 opportunities to snag incredible real estate deals. Whether
@@ -201,7 +203,7 @@ const Firstscreen = () => {
           </div>
         </div>
       </div>
-      <div className="m-6 bg-[#F3EEFD] rounded-lg shadow-lg">
+      <div className="container m-4 max-lg:m-2 bg-[#F3EEFD] rounded-lg shadow-lg">
         <h1
           className="text-bold text-4xl underline  flex justify-center m-4 mx-8 px-4 pt-4"
           style={{ fontFamily: "youngSerif" }}
@@ -224,7 +226,7 @@ const Firstscreen = () => {
         </h3>
       </div>
 
-      <div className="bg-[#100614] rounded-lg shadow-lg flex flex-col mx-4 my-8">
+      <div className="container bg-[#100614] rounded-lg shadow-lg flex flex-col mx-4 my-8">
         <div
           className="text-bold text-4xl underline  m-4 mx-8 flex justify-center px-4 pt-4"
           style={{ fontFamily: "youngSerif" }}
@@ -264,9 +266,11 @@ const Firstscreen = () => {
         </div>
       </div>
 
-      <Suspense fallback={<div>Loading...</div>}>
+     <div className="container">
+     <Suspense fallback={<div>Loading...</div>}>
         <Footer />
       </Suspense>
+     </div>
     </div>
   );
 };

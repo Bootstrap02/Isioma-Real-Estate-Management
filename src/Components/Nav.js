@@ -13,10 +13,10 @@ const Nav = () => {
   };
 
   return (
-    <div className="m-4 container flex justify-between gap-[16rem]">
+    <div className="m-4 container flex justify-between gap-[16rem] max-lg:p-4">
       <div>
         <a href="#">
-          <img src={images.logo} width={200} height={150} loading="lazy" />
+          <img src={images.picture.logo} width={200} height={150} loading="lazy" />
         </a>
       </div>
       <nav className=" flex max-lg:hidden px-8 p-4 mr-auto   rounded-lg border-b border-gray-300 row justify-between shadow-xl bg-purple-100">
@@ -38,8 +38,8 @@ const Nav = () => {
           </li>
         </ul>
       </nav>
-      <div className="hidden  max-lg:block px-4 mr-6" onClick={openModals}>
-        <img src={images.menu} width={90} height={75} loading="lazy" />
+      <div className="hidden  max-lg:block  mr-6" onClick={openModals}>
+        <img src={images.picture.menu} />
         <Suspense fallback={<div>Loading...</div>}>
           {modals && <Navmodal closeModals={closeModals} />}
         </Suspense>

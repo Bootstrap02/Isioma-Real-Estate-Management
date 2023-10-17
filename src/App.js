@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import "./App.css";
+import Lazyloading from "./Components/Lazyloading";
 import { Routes, Route } from "react-router-dom";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
@@ -10,6 +11,7 @@ const CheapPost2 = lazy(() => import("./Components/CheapPost2"));
 const Post = lazy(() => import("./Components/Post"));
 const Blogs = lazy(() => import("./Components/Blogs"));
 
+
 function App() {
   return (
     <div>
@@ -17,8 +19,7 @@ function App() {
         <Route
           path="/"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
-            // 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
+            <Suspense fallback={<div className="w-[100%]"><Lazyloading/></div>}>
               <Firstscreen />
             </Suspense>
           }
@@ -26,7 +27,7 @@ function App() {
         <Route
           path="/Assets"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div><Lazyloading/></div>}>
               <Assets />
             </Suspense>
           }
@@ -34,7 +35,7 @@ function App() {
         <Route
           path="/Post/:title"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div><Lazyloading/></div>}>
               <Post />
             </Suspense>
           }
@@ -42,7 +43,7 @@ function App() {
         <Route
           path="/CheapPost/:title"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div><Lazyloading/></div>}>
               <CheapPost />
             </Suspense>
           }
@@ -50,7 +51,7 @@ function App() {
         <Route
           path="/CheapPost2/:title"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div><Lazyloading/></div>}>
               <CheapPost2 />
             </Suspense>
           }
@@ -60,7 +61,7 @@ function App() {
         <Route
           path="/Blogs"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div><Lazyloading/></div>}>
               <Blogs />
             </Suspense>
           }

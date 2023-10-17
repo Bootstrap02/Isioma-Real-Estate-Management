@@ -6,7 +6,7 @@ const Feeds = lazy(() => import("./Feeds"));
 
 const Blogs = () => {
     const backgroundImageStyle = {
-        backgroundImage: `url(${images.homepage1})`,
+        backgroundImage: `url(${images.picture.homepage1})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

@@ -5,7 +5,7 @@ import images from "./images";
 
 const About = () => {
   const backgroundImageStyle = {
-    backgroundImage: `url(${images.homepage1})`,
+    backgroundImage: `url(${images.picture.homepage1})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -32,7 +32,7 @@ const About = () => {
             into Realty
           </div>
           <div className="my-4">
-            <img src={images.family} width={600} height={600} loading="lazy" />
+            <img src={images.picture.family} width={600} height={600} loading="lazy" />
           </div>
         </div>
         <div className="mx-6 w-[50%] max-lg:w-[100%] my-8">

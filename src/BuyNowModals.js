@@ -52,7 +52,7 @@ const BuyNowModals = ({ closeModals }) => {
         </div>
         <div className="ml-auto">
           <button className="bg-white" onClick={closeModals}>
-            <img src={images.cancel} />
+            <img src={images.picture.cancel} />
           </button>
         </div>
       </div>

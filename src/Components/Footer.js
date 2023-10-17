@@ -4,16 +4,18 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-black p-8 flex justify-between items-start max-lg:flex-col padding  text-white mt-4">
+    <div className=" container bg-black p-8 max-lg:p-4 flex justify-between items-start max-lg:flex-col  text-white mt-4">
       <div className="flex flex-col justify-center m-4 gap-6">
         <div className="flex flex-col gap-6 ">
           <div className="text-xl">About Us</div>
-          <div className="w-[350px]">
+          <div>
+            <h3 className="w-[60%] max-lg:w-full">
             At Isioma Real-estate company, we don't just sell properties; we
             craft dreams into reality. With an unwavering commitment to
             excellence and a passion for perfection, we redefine the real estate
             experience. Established on the pillars of integrity, trust, and
             innovation, we stand as the epitome of quality in the industry.
+            </h3>
           </div>
           <Link to="/About">
             <button className="bg-red-600 rounded-lg border p-2 ">
@@ -25,9 +27,12 @@ const Footer = () => {
           <Link className="text-xl" to="/Advertise">
             Advertise with Us
           </Link>
-          <div className="w-[350px]">
+          <div>
+            <h3 className="w-[60%] max-lg:w-full">
             Advertise/Market Your Property with us for instant deals and
             progress in sales and promotion. click the link above
+            </h3>
+           
           </div>
         </div>
       </div>
@@ -37,16 +42,16 @@ const Footer = () => {
           <div className="text-center text-xl">
             <h1>Follow Us</h1>
           </div>
-          <div className="flex   justify-center items-center rounded-lg m-4 px-2 gap-8 w-fit-content border border-[#B59410] bg-[#000000c4]">
+          <div className="flex   justify-center items-center rounded-lg m-4 px-2 gap-8 border border-[#B59410] bg-[#000000c4]">
             <a href="#">
-              <img src={images.twitter} width={30} height={18} loading="lazy" />
+              <img src={images.picture.twitter} width={30} height={18} loading="lazy" />
             </a>
             <a
               href="https://instagram.com/louisjoseph7969?igshid=NzZlODBkYWE4Ng=="
               target="_blank"
             >
               <img
-                src={images.instagram}
+                src={images.picture.instagram}
                 width={20}
                 height={13}
                 loading="lazy"
@@ -54,7 +59,7 @@ const Footer = () => {
             </a>
             <a href="https://www.linkedin.com/in/louis-joseph-634558153/">
               <img
-                src={images.linkedin}
+                src={images.picture.linkedin}
                 width={20}
                 height={13}
                 loading="lazy"
@@ -62,7 +67,7 @@ const Footer = () => {
             </a>
             <a href="https://m.facebook.com/profile.php/?id=100011187841047">
               <img
-                src={images.facebook}
+                src={images.picture.facebook}
                 width={20}
                 height={13}
                 loading="lazy"
