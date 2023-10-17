@@ -100,14 +100,14 @@ const Firstscreen = () => {
           Visit us @: 23 rd, Gwagwalada, Abuja, Nigeria.
         </div>
       </div>
-      <div className= "w-[100%] bg-[#F3EEFF]  rounded-lg shadow-lg my-8 mx-4 max=lg:m-0 flex flex-col justify-center items-center">
+      <div className= "w-[100%] bg-[#F3EEFF]  rounded-lg shadow-lg m-8 max=lg:m-0 flex flex-col justify-center items-center">
         <div
           className="text-bold text-4xl underline flex justify-center max-lg:m-0 m-4 mx-8 px-4 pt-4"
           style={{ fontFamily: "youngSerif" }}
         >
           <h1>Hot Deals</h1>
         </div>
-        <div className="w-full bg-[#29231E] rounded-xl max-lg:flex-col p-4  border m-4  text-white">
+        <div className="w-full bg-[#29231E] rounded-xl max-lg:flex-col p-4 m-8  border   text-white">
           <div className="flex flex-row max-lg:flex-col ">
             <div className="text-2xl  max-lg:w-[100%] p-4 ">
               <h2>
@@ -232,15 +232,15 @@ const Firstscreen = () => {
         >
           <h1 className="text-white">Testimonials</h1>
         </div>
-        <div className=" m-4 flex flex-row justify-center items-center flex-wrap gap-[20px] max:lg-m-1 ">
+        <div className=" m-4 flex flex-row justify-between flex-wrap gap-[20px] max:lg-m-1 ">
           {images.testimonials.map((image, index) => {
             return (
               <div
                 key={index + 1}
-                className="flex flex-col  gap-4  p-4 mx-8 my-4 w-[fit-content] flex-wrap max:lg-m-1 max-xl:p-2 bg-[#A36671] shadow-lg rounded-lg"
+                className="flex flex-col  gap-4  p-4 m-6 w-[fit-content] flex-wrap max:lg-m-1 max-xl:p-2 bg-[#A36671] shadow-lg rounded-lg"
               >
                 <div className="flex flex-row gap-4 items-center  ">
-                  <div>
+                  <div className="w-[fit-content]">
                     <img
                       src={image.image}
                       width={250}
@@ -248,7 +248,7 @@ const Firstscreen = () => {
                     />
                   </div>
 
-                  <div><h4 className="w-[50%] max-lg:w-full">{image.text}</h4></div>
+                  <div className="text-center"><h4 className="w-[150px] max-lg:w-full">{image.text}</h4></div>
                 </div>
                 <div className="flex flex-row gap-4 justify-center">
                   <h3>

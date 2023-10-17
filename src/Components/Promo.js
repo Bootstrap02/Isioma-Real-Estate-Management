@@ -36,7 +36,7 @@ const Promo = () => {
           <Link
             key={index}
             to={`/Post/${image?.title}`}
-            className="flex justify-between flex-col   bg-purple-100 shadow-xl rounded-lg border m-2"
+            className="flex justify-center flex-col max-lg:m-0  bg-purple-100 shadow-xl rounded-lg border m-2"
           >
             <div>
               <div

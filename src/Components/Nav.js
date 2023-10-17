@@ -11,12 +11,11 @@ const Nav = () => {
   const closeModals = () => {
     setModals(false);
   };
-
   return (
-    <div className="m-4  flex justify-between gap-[16rem] max-lg:p-4">
+    <div className="m-4   flex justify-between gap-[16rem]">
       <div>
         <a href="#">
-          <img src={images.picture.logo} width={200} height={150} loading="lazy" />
+          <img className="w-[250px] max-lg:w-[350px]" src={images.picture.logo} />
         </a>
       </div>
       <nav className=" flex max-lg:hidden px-8 p-4 mr-auto   rounded-lg border-b border-gray-300 row justify-between shadow-xl bg-purple-100">
@@ -39,7 +38,7 @@ const Nav = () => {
         </ul>
       </nav>
       <div className="hidden  max-lg:block  mr-6" onClick={openModals}>
-        <img src={images.picture.menu} />
+        <img src={images.picture.menu}  />
         <Suspense fallback={<div>Loading...</div>}>
           {modals && <Navmodal closeModals={closeModals} />}
         </Suspense>

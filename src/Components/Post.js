@@ -33,7 +33,7 @@ const Post = () => {
         <Nav />
       </Suspense>
       </div>
-      <div className="flex justify-between  max-lg:flex-col mx-6 my-4">
+      <div className="flex justify-between  max-lg:flex-col mx-6 my-4 max-lg:m-0">
         <div className="bg-[#D3EFC7] shadow-lg  shadow-[#1D0F0C] rounded-lg p-4 flex flex-col gap-4">
           <div className="font-bold text-center">{findHouse.title}</div>
           <div className="w-[250px] max-lg:hidden">
@@ -51,7 +51,7 @@ const Post = () => {
             </h3>
           </div>
         </div>
-        <div className="flex  justify-center flex-wrap gap-[20px] shadow-xl rounded-lg  shadow-[#837078] m-4 p-2">
+        <div className="flex  justify-center flex-wrap gap-[20px] shadow-xl rounded-lg  shadow-[#837078] max-lg:m-0 m-4 p-2">
           <div className="flex justify-between flex-col my-4 mx-4  bg-purple-100 shadow-xl rounded-lg border m-2 ">
             <div className="flex flex-col gap-[10px]  bg-[#0E3980] justify-between items-center">
               <div className="h-[350px] w-[fit-content] my-1">
@@ -126,11 +126,11 @@ const Post = () => {
             </div>
           </div>
         </div>
-        <div className="font-bold text-center flex flex-col justify-between gap-6">
+        <div className="font-bold text-center flex flex-col my-6 justify-center gap-6">
           <p>
             <strong>see also...</strong>
           </p>
-          <div  className="w-[250px]">
+          <div  className="w-[250px] flex justify-center max-lg:w-full">
           <Suspense fallback={<div>Loading...</div>}>
             <Promo />
           </Suspense>
