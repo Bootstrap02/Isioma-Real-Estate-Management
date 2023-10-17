@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Feeds = () => {
   return (
-    <div className="container flex flex-row justify-center items-center flex-wrap gap-[20px] shadow-xl max-lg:p-2 max-lg:m-0 rounded-lg  m-4 p-8">
+    <div className="container flex flex-row justify-center items-center  flex-wrap gap-[20px] shadow-xl max-lg:p-2 max-lg:m-0 rounded-lg  m-4 p-8">
       {images.Feeds.map((image, index) => {
         return (
           <div className="flex gap-4 justify-start m-6 p-6 max-lg:p-2 max-lg:m-0">

@@ -20,11 +20,10 @@ const Firstscreen = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    minHeight: "100vh",
   };
 
   return (
-    <div className="  flex-1 flex flex-col ">
+    <div className="  w-full justify-center items-center flex flex-col ">
       <div className=" flex  flex-col" style={backgroundImageStyle}>
       <div className="mb-[12rem]">
       <Suspense  fallback={<div>Loading...</div>}>
@@ -101,14 +100,14 @@ const Firstscreen = () => {
           Visit us @: 23 rd, Gwagwalada, Abuja, Nigeria.
         </div>
       </div>
-      <div className= "container bg-[#F3EEFF] rounded-lg shadow-lg my-8 mx-4 flex flex-col ">
+      <div className= "w-[100%] bg-[#F3EEFF]  rounded-lg shadow-lg my-8 mx-4 max=lg:m-0 flex flex-col justify-center items-center">
         <div
-          className="text-bold text-4xl underline flex justify-center m-4 mx-8 px-4 pt-4"
+          className="text-bold text-4xl underline flex justify-center max-lg:m-0 m-4 mx-8 px-4 pt-4"
           style={{ fontFamily: "youngSerif" }}
         >
           <h1>Hot Deals</h1>
         </div>
-        <div className="container bg-[#29231E] rounded-xl max-lg:flex-col p-4  border m-4  text-white">
+        <div className="w-full bg-[#29231E] rounded-xl max-lg:flex-col p-4  border m-4  text-white">
           <div className="flex flex-row max-lg:flex-col ">
             <div className="text-2xl  max-lg:w-[100%] p-4 ">
               <h2>
@@ -122,7 +121,7 @@ const Firstscreen = () => {
                 src={images.picture.discount}
                 width={100}
                 height={150}
-                loading="lazy"
+
               />
             </div>
           </div>
@@ -153,7 +152,7 @@ const Firstscreen = () => {
       
             </div>
             
-              <div className="w-[60%] p-4 max-lg:w-full m-4 max-lg:m-1">
+              <div className="w-[60%] p-4 max-lg:w-[100%] m-4 max-lg:m-1">
               <Suspense fallback={<div>Loading...</div>}>
                 <Gallery />
               </Suspense>
@@ -174,7 +173,7 @@ const Firstscreen = () => {
             </div>
           </div>
           <div className="flex flex-row justify-between max-lg:flex-col">
-            <div className="w-[60%] p-4 mx-4 my-8 max-lg:w-full max-lg:m-1 ">
+            <div className="w-[60%] p-4 mx-4 my-8 max-lg:w-[100%] max-lg:m-1 ">
               <Suspense fallback={<div>Loading...</div>}>
                 <Gallery2 />
               </Suspense>
@@ -233,12 +232,12 @@ const Firstscreen = () => {
         >
           <h1 className="text-white">Testimonials</h1>
         </div>
-        <div className=" m-4 flex flex-row justify-center items-center flex-wrap gap-[20px]  ">
+        <div className=" m-4 flex flex-row justify-center items-center flex-wrap gap-[20px] max:lg-m-1 ">
           {images.testimonials.map((image, index) => {
             return (
               <div
                 key={index + 1}
-                className="flex flex-col  gap-4  p-4 mx-8 my-4 w-[fit-content] flex-wrap bg-[#A36671] shadow-lg rounded-lg"
+                className="flex flex-col  gap-4  p-4 mx-8 my-4 w-[fit-content] flex-wrap max:lg-m-1 max-xl:p-2 bg-[#A36671] shadow-lg rounded-lg"
               >
                 <div className="flex flex-row gap-4 items-center  ">
                   <div>
@@ -246,11 +245,10 @@ const Firstscreen = () => {
                       src={image.image}
                       width={250}
                       height={250}
-                      loading="lazy"
                     />
                   </div>
 
-                  <div className="w-[150px]">{image.text}</div>
+                  <div><h4 className="w-[50%] max-lg:w-full">{image.text}</h4></div>
                 </div>
                 <div className="flex flex-row gap-4 justify-center">
                   <h3>
@@ -266,7 +264,7 @@ const Firstscreen = () => {
         </div>
       </div>
 
-     <div className="container">
+     <div className="w-full">
      <Suspense fallback={<div>Loading...</div>}>
         <Footer />
       </Suspense>

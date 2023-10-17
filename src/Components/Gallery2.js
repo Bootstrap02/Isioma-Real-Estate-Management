@@ -36,13 +36,12 @@ const Gallery2 = () => {
     <div className="border-[#d4af37] border-4">
       <Slider {...settings}>
         {images.Lands.map((image, index) => (
-          <Link to={`/CheapPost2/${image?.title}`}  key={index + 1} className="m-8 px-4">
+          <Link to={`/CheapPost2/${image?.title}`}  key={index + 1} className="m-8 max-lg:m-2 max-lg:p-2 px-4">
             <h3 className="text-center">{image.title}</h3>
             <img
               src={image.image}
               width={500}
               height={650}
-              loading="lazy"
               alt={image.title}
             />
             <div className="text-center flex flex-col gap-4">

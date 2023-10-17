@@ -30,7 +30,7 @@ const Promo = () => {
 
 
   return (
-    <div className=" justify-center items-center flex flex-col  w-[fit-content] gap-[20px] shadow-xl rounded-lg border ">
+    <div className=" justify-center items-center flex flex-col max-lg:m-0 max-lg:p-2  w-[fit-content] gap-[20px] shadow-xl rounded-lg border ">
       {randomHouses.map((image, index) => {
         return (
           <Link

@@ -14,7 +14,7 @@ const Cards = () => {
   };
 
   return (
-    <div className="flex flex-row max-lg:col justify-center items-center flex-wrap gap-[20px] shadow-xl  rounded-lg  m-4 p-8">
+    <div className="flex flex-row max-lg:col justify-center items-center flex-wrap gap-[20px] shadow-xl  rounded-lg max-lg:m-0 max-lg:p-2  m-4 p-8">
       {images.Card.map((image, index) => {
         return (
           <Link

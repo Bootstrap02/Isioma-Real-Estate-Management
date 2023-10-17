@@ -24,12 +24,12 @@ const Assets = () => {
       </div>
 
         <div
-          className="flex justify-center items-center m-8 rounded-sm text-4xl font-bold"
+          className="flex justify-center items-center m-8  max-lg:m-2 max-lg:text-2xl rounded-sm text-4xl font-bold"
           style={backgroundImageStyle}
         >
           <h1>Assets/Properties</h1>
         </div>
-        <div className="mx-4 my-8">
+        <div className="mx-4 my-8 max-lg:m-2">
         <Suspense  fallback={<div>Loading...</div>}>
           <Cards />
         </Suspense>

@@ -13,7 +13,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="m-4 container flex justify-between gap-[16rem] max-lg:p-4">
+    <div className="m-4  flex justify-between gap-[16rem] max-lg:p-4">
       <div>
         <a href="#">
           <img src={images.picture.logo} width={200} height={150} loading="lazy" />
