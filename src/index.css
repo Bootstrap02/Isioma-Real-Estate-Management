@@ -18,9 +18,9 @@
     margin: 0 auto;
   }
 
-  .input {
+  /* .input {
     @apply max-lg:w-full text-base leading-normal text-slate-gray  max-lg:p-5 outline-none  border max-lg:border-slate-gray max-lg:rounded-full;
-  }
+  } */
   
 }
 
