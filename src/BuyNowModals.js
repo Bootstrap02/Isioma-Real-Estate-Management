@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import images from "./Components/images";
+import { useParams } from "react-router-dom";
 
-const BuyNowModals = ({ closeModals }) => {
+const BuyNowModals = ({ closeModals, openSuccessMessage }) => {
   const modalStyle = {
     zIndex: "2000",
     position: "absolute",
@@ -15,6 +16,9 @@ const BuyNowModals = ({ closeModals }) => {
     paymentMethod: "cash",
     preferredProperty: "house1",
   });
+
+  
+
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -31,6 +35,8 @@ const BuyNowModals = ({ closeModals }) => {
       if (response.ok) {
         console.log("Form submitted successfully!");
         closeModals(); // Close the modal after form submission
+        openSuccessMessage();
+        
       } else {
         console.error("Form submission failed.");
         // Handle error (show an error message to the user, etc.)
@@ -153,12 +159,18 @@ const BuyNowModals = ({ closeModals }) => {
           Book a Unit
         </button>
       </form>
+    
     </div>
   );
 };
 
 
-const CheapModals = ({ closeModals }) => {
+const CheapModals = ({ closeModals, openSuccessMessage }) => {
+
+  const { title } = useParams();
+  const findHouse = images.Houses.find((house) => house.title === title);
+
+  
   const modalStyle = {
     zIndex: "2000",
     position: "absolute",
@@ -170,9 +182,10 @@ const CheapModals = ({ closeModals }) => {
     email: "",
     phoneNumber: "",
     paymentMethod: "cash",
-    preferredProperty: images.Houses.title
+    preferredProperty: findHouse.title
   });
 
+  
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
@@ -188,6 +201,7 @@ const CheapModals = ({ closeModals }) => {
       if (response.ok) {
         console.log("Form submitted successfully!");
         closeModals(); // Close the modal after form submission
+        openSuccessMessage();
       } else {
         console.error("Form submission failed.");
         // Handle error (show an error message to the user, etc.)
@@ -209,7 +223,7 @@ const CheapModals = ({ closeModals }) => {
         </div>
         <div className="ml-auto">
           <button className="bg-white" onClick={closeModals}>
-            <img src={images.cancel} />
+            <img src={images.picture.cancel} />
           </button>
         </div>
       </div>
@@ -278,17 +292,6 @@ const CheapModals = ({ closeModals }) => {
             <option value="bankTransfer">Bank Transfer</option>
           </select>
         </div>
-        <div className="my-2">
-          <label className=" text-white" htmlFor="preferredProperty">
-            Property
-          </label>
-          <input
-            type="text"
-            id="preferredProperty"
-            className="w-full py-2 rounded-lg px-4 my-2"
-            value={formData.preferredProperty}
-          />
-        </div>
         <button
           type="submit"
           className="w-full py-2 px-4 rounded-lg font-semibold my-2 bg-[#D88538]"
@@ -296,12 +299,19 @@ const CheapModals = ({ closeModals }) => {
           Book a Unit
         </button>
       </form>
+     
     </div>
   );
 };
 
 
-const CheapPostModals = ({ closeModals }) => {
+const CheapPostModals = ({ closeModals, openSuccessMessage }) => {
+
+  const { title } = useParams();
+  const findHouse = images.Lands.find((house) => house.title === title);
+
+  
+
   const modalStyle = {
     zIndex: "2000",
     position: "absolute",
@@ -313,9 +323,11 @@ const CheapPostModals = ({ closeModals }) => {
     email: "",
     phoneNumber: "",
     paymentMethod: "cash",
-    preferredProperty: images.Lands.title,
+    preferredProperty: findHouse.title,
   });
 
+  
+  
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
@@ -331,6 +343,7 @@ const CheapPostModals = ({ closeModals }) => {
       if (response.ok) {
         console.log("Form submitted successfully!");
         closeModals(); // Close the modal after form submission
+        openSuccessMessage();
       } else {
         console.error("Form submission failed.");
         // Handle error (show an error message to the user, etc.)
@@ -352,7 +365,7 @@ const CheapPostModals = ({ closeModals }) => {
         </div>
         <div className="ml-auto">
           <button className="bg-white" onClick={closeModals}>
-            <img src={images.cancel} />
+            <img src={images.picture.cancel} />
           </button>
         </div>
       </div>
@@ -421,17 +434,6 @@ const CheapPostModals = ({ closeModals }) => {
             <option value="bankTransfer">Bank Transfer</option>
           </select>
         </div>
-        <div className="my-2">
-          <label className=" text-white" htmlFor="preferredProperty">
-            Property
-          </label>
-          <input
-            type="text"
-            id="preferredProperty"
-            className="w-full py-2 rounded-lg px-4 my-2"
-            value={formData.preferredProperty}
-            />
-            </div>
         <button
           type="submit"
           className="w-full py-2 px-4 rounded-lg font-semibold my-2 bg-[#D88538]"
@@ -439,12 +441,19 @@ const CheapPostModals = ({ closeModals }) => {
           Book a Unit
         </button>
       </form>
+    
     </div>
   );
 };
 
 
-const PostModals = ({ closeModals }) => {
+const PostModals = ({ closeModals, openSuccessMessage }) => {
+
+  const { title } = useParams();
+  const findHouse = images.Card.find((house) => house.title === title);
+
+ 
+
   const modalStyle = {
     zIndex: "2000",
     position: "absolute",
@@ -456,9 +465,11 @@ const PostModals = ({ closeModals }) => {
     email: "",
     phoneNumber: "",
     paymentMethod: "cash",
-    preferredProperty: images.Card.title
+    preferredProperty: findHouse.title
   });
 
+  
+  
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
@@ -474,6 +485,7 @@ const PostModals = ({ closeModals }) => {
       if (response.ok) {
         console.log("Form submitted successfully!");
         closeModals(); // Close the modal after form submission
+        openSuccessMessage();
       } else {
         console.error("Form submission failed.");
         // Handle error (show an error message to the user, etc.)
@@ -495,7 +507,7 @@ const PostModals = ({ closeModals }) => {
         </div>
         <div className="ml-auto">
           <button className="bg-white" onClick={closeModals}>
-            <img src={images.cancel} />
+            <img src={images.picture.cancel} />
           </button>
         </div>
       </div>
@@ -564,17 +576,6 @@ const PostModals = ({ closeModals }) => {
             <option value="bankTransfer">Bank Transfer</option>
           </select>
         </div>
-        <div className="my-2">
-          <label className=" text-white" htmlFor="preferredProperty">
-            Property
-          </label>
-          <input
-            type="text"
-            id="preferredProperty"
-            className="w-full py-2 rounded-lg px-4 my-2"
-            value={formData.preferredProperty}
-            />
-            </div>
         <button
           type="submit"
           className="w-full py-2 px-4 rounded-lg font-semibold my-2 bg-[#D88538]"
@@ -582,6 +583,7 @@ const PostModals = ({ closeModals }) => {
           Book a Unit
         </button>
       </form>
+    
     </div>
   );
 };

@@ -10,7 +10,29 @@ const Promo = lazy(() => import("./Promo"));
 const Post = () => {
   const { title } = useParams();
 
+  const modalStyle = {
+    zIndex: "2000",
+    position: "fixed",
+    top: "20%",
+    left: "10%"
+    
+  };
+
+
   const [modals, setModals] = useState(false);
+
+
+  const [successMessage, setSuccessMessage] = useState(false);
+
+
+const openSuccessMessage = () => {
+   setSuccessMessage("Congratulations! Your booking was successful");
+};
+const closeSuccessMessage = () => {
+   setSuccessMessage(false)
+};
+
+
   const openModals = () => {
     setModals(true);
   };
@@ -73,7 +95,7 @@ const Post = () => {
                   <strong>Explore Our Angles to your satisfaction</strong>
                 </h2>
               </div>
-              <div className=" flex  gap-6 h-[200]  bg-[#438672] rounded-lg">
+              <div className=" flex  gap-6   bg-[#438672] rounded-lg">
                 {findHouse.photos.map((photo, index) => (
                   <div
                     key={index + 1}
@@ -88,14 +110,12 @@ const Post = () => {
                       src={photo}
                       width={100}
                       height={100}
-                      loading="lazy"
                       alt="picture"
                     />
                   </div>
                 ))}
               </div>
-            </div>
-            <div className="flex items-center flex-col  p-4 bg-[#1D0F0C] text-white font-bold ">
+                 <div className="flex items-center flex-col  p-4 bg-[#1D0F0C] text-white font-bold ">
               <h2 className="font-black text-white">{findHouse.title}</h2>
               <div className="flex gap-[20px]">
                 <h3 className="text-purple-400">{findHouse.location}</h3>
@@ -119,12 +139,26 @@ const Post = () => {
                     <strong>Book Unit Now</strong>
                   </button>
                   <div>
-                    {modals && <PostModals closeModals={closeModals} />}
+                    {modals && <PostModals closeModals={closeModals} openSuccessMessage = {openSuccessMessage} />}
+                    <div  style={modalStyle} className="w-[1000px] max-lg:w-[300px]" >
+          {successMessage &&  <div className='container bg-black rounded-lg w-full flex flex-col justify-center items-center m-4 p-4 max-lg:p-2 max-lg:m-2 '>
+          
+    <div className="flex flex-col justify-center w-full gap-4 items-center rounded-lg border-2 border-[#B59410] p-8 max-lg:p-4">
+    <button className="bg-white ml-auto" onClick={ closeSuccessMessage}>
+      <img src= {images.picture.cancel}/>
+      </button>
+      <p className='text-white font-black text-center text-4xl max-lg:text-2xl'>{successMessage}</p>
+      <img src= {images.picture.sent} width={100}/>
+    </div>
+  </div>}
+        </div>
                   </div>
                 </div>
               </div>
             </div>
+            </div>
           </div>
+                   
         </div>
         <div className="font-bold text-center flex flex-col my-6 justify-center gap-6">
           <p>

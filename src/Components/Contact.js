@@ -13,6 +13,16 @@ const Contact = () => {
     color: "white",
   };
 
+  const modalStyle = {
+    zIndex: "2000",
+    position: "fixed",
+    top: "25%",
+    left: "10%",
+    }
+
+  const [successMessage, setSuccessMessage] = useState(null);
+
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -34,6 +44,14 @@ const Contact = () => {
       });
       if (response.ok) {
         console.log("Form submitted successfully!");
+        setSuccessMessage("Message sent successfully!"); // Set success message
+        setFormData({ // Reset form fields
+          fullName: "",
+          email: "",
+          phoneNumber: "",
+          message: "",
+        });
+
       } else {
         console.error("Form submission failed.");
         // Handle error (show an error message to the user, etc.)
@@ -142,6 +160,18 @@ const Contact = () => {
             </button>
           </form>
         </div>
+        <div  style={modalStyle} className="w-[1000px] max-lg:w-[300px]" >
+          {successMessage &&  <div className='container bg-black rounded-lg w-full flex flex-col justify-center items-center m-4 p-4 max-lg:p-2 max-lg:m-2 '>
+          
+    <div className="flex flex-col justify-center w-full gap-4 items-center rounded-lg border-2 border-[#B59410] p-8 max-lg:p-4">
+    <button className="bg-white ml-auto" onClick={() => setSuccessMessage(null)}>
+      <img src= {images.picture.cancel}/>
+      </button>
+      <p className='text-white font-black text-center text-4xl max-lg:text-2xl'>{successMessage}</p>
+      <img src= {images.picture.sent} width={200}/>
+    </div>
+  </div>}
+        </div>
         <div className="border m-6 max-lg:m-4">
           <div>
             <h1 className="text-2xl">
@@ -158,5 +188,6 @@ const Contact = () => {
     </div>
   );
 };
+
 
 export default Contact;

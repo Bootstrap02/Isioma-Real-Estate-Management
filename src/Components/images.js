@@ -1,11 +1,11 @@
 const picture = {
   home : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455059/Isioma_project/work/home_jclknt.jpg',
-  logo : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455238/Isioma_project/work/logo_sbnjjw.png',
+  menu : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697637015/Isioma_project/work/menu_e3d5xf.png',
   homepage : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455063/Isioma_project/work/homepage_hsyb8g.png',
   homepage1 : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455063/Isioma_project/work/homepage1_fziyyc.png',
   facebook : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455019/Isioma_project/work/facebook_egls0e.png',
   family : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455020/Isioma_project/work/family_g7hhxc.webp',
-  menu : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455238/Isioma_project/work/menu_kh15ym.png',
+  logo : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697637014/Isioma_project/work/logo_la1hww.png',
   hotel : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455061/Isioma_project/work/hotel_rac8ha.jpg',
   hotel1 : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455062/Isioma_project/work/hotel1_rmsfc6.jpg',
   houseA1 : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455062/Isioma_project/work/houseA1_tqrhkp.jpg',
@@ -102,7 +102,8 @@ const picture = {
   discant : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455019/Isioma_project/work/discant_xa5344.png',
   cancels : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455020/Isioma_project/work/cancels_ydqs2v.png',
   video   : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455242/Isioma_project/work/video_sindks.png',
-  welcome : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697475097/Isioma_project/work/welcome_eby8li.jpg'
+  welcome : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697475097/Isioma_project/work/welcome_eby8li.jpg',
+  sent : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697624602/Isioma_project/work/Group_211_wolujt.png',
 }
 
 
