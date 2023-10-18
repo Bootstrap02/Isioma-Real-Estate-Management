@@ -63,7 +63,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container">
+    <div className="w-full ">
       <div className="mb-[12rem]">
         <Nav />
       </div>
@@ -74,8 +74,8 @@ const Contact = () => {
       >
         <h1>Contact Us</h1>
       </div>
-      <div>
-        <h1 className="text-4xl max-lg:2xl:">
+      <div className="max-lg:w-[80%] m-2">
+        <h1 className="text-4xl max-lg:2xl m-2">
           <strong>Get in touch with us</strong>
         </h1>
         <p>
@@ -85,10 +85,10 @@ const Contact = () => {
         </p>
       </div>
       <div className="flex gap-8 justify-center max-lg:flex-col">
-        <div>
+        
           <form
             onSubmit={handleFormSubmit}
-            className="input border m-6 max-lg:m-4 "
+            className="input border m-6 max-lg:m-1 "
           >
             <div className="my-2 border">
               <label className="text-white" htmlFor="fullName">
@@ -159,7 +159,7 @@ const Contact = () => {
               Submit
             </button>
           </form>
-        </div>
+        
         <div  style={modalStyle} className="w-[1000px] max-lg:w-[300px]" >
           {successMessage &&  <div className='container bg-black rounded-lg w-full flex flex-col justify-center items-center m-4 p-4 max-lg:p-2 max-lg:m-2 '>
           

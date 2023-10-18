@@ -14,7 +14,7 @@ const About = () => {
   };
 
   return (
-    <div className="container">
+    <div className="w-full ">
       <div className="mb-[12rem]">
         <Nav />
       </div>
@@ -27,7 +27,7 @@ const About = () => {
 
       <div className="flex gap-6 max-lg:flex-col">
         <div className="gap-6 p-6">
-          <div className="text-4xl my-4">
+          <div className="text-4xl my-4 max-lg:text-2xl max-lg:my-2">
             <span className="text-green-700">A Family :</span> Elevating Dreams
             into Realty
           </div>
@@ -35,7 +35,7 @@ const About = () => {
             <img src={images.picture.family} width={600} height={600} loading="lazy" />
           </div>
         </div>
-        <div className="mx-6 w-[50%] max-lg:w-[100%] my-8">
+        <div className="mx-6 w-[50%] max-lg:w-[80%] my-8">
           <strong>
             At Isioma Real-Estate Agency, we don't just sell properties;
           </strong>
