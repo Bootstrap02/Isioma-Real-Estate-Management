@@ -65,7 +65,7 @@ const closeSuccessMessage = () => {
             </h2>
             <h3>
               Welcome to your private oasis of elegance and comfort! Nestled in
-              the heart of Abuja, this exquisite residence embodies the epitome
+              the heart of {findHouse.location}, this exquisite residence embodies the epitome
               of luxury living. Prepare to be enchanted by this meticulously
               designed home, where opulence meets functionality, offering you a
               lifestyle of unparalleled sophistication and ease.

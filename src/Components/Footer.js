@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className=" w-full bg-black p-8 max-lg:p-4 flex justify-between items-start max-lg:flex-col  text-white mt-4">
-      <div className="flex flex-col justify-center m-4 gap-6">
+      <div className="flex flex-col justify-center m-4 gap-6 w-[40%] max-lg:w-[100%]">
         <div className="flex flex-col gap-6 ">
           <div className="text-xl">About Us</div>
           <div>
-            <h3 className="w-[60%] max-lg:w-full">
+            <h3 className="w-full">
             At Isioma Real-estate company, we don't just sell properties; we
             craft dreams into reality. With an unwavering commitment to
             excellence and a passion for perfection, we redefine the real estate
@@ -28,7 +28,7 @@ const Footer = () => {
             Advertise with Us
           </Link>
           <div>
-            <h3 className="w-[60%] max-lg:w-full">
+            <h3 className="w-[60%] max-lg:w-[100%]">
             Advertise/Market Your Property with us for instant deals and
             progress in sales and promotion. click the link above
             </h3>

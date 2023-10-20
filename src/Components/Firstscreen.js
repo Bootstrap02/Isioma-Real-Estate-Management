@@ -130,7 +130,7 @@ const closeSuccessMessage = () => {
             </div>
           </div>
         </div>
-        <div className="mx-8 font-bold text-lg text-white">
+        <div className="mx-8 font-bold text-lg text-white  rounded-lg bg-[#000000c4]">
           Visit us @: 23 rd, Gwagwalada, Abuja, Nigeria.
         </div>
       </div>
@@ -146,7 +146,7 @@ const closeSuccessMessage = () => {
             <div className="text-2xl  max-lg:w-[100%] p-4 ">
               <h2>
                 <strong>
-                  You don't have to think twice, it's a deal of a lifetime.
+                Discover Exclusive Hot Deals with Isioma Real Estate Management.
                 </strong>
               </h2>
             </div>
@@ -160,28 +160,15 @@ const closeSuccessMessage = () => {
             </div>
           </div>
 
-          <div className="flex justify-between max-lg:flex-col  ">
+          <div className="flex justify-between items-center max-lg:flex-col  ">
             <div>
     
                 <h5 className="w-[80%] max-lg:w-full">
-                  Welcome to our "Hot Deals" section, where you'll find
-                  exclusive opportunities to snag incredible real estate deals.
-                  Whether you're a first-time buyer, an experienced investor, or
-                  someone looking for their dream home, these listings offer
-                  unbeatable value in today's competitive market. Don't miss out
-                  – act fast, as these deals won't last long! Indulge in our
-                  thoughtfully designed rooms and suites, each adorned with
-                  modern amenities and stunning views that offer a serene
-                  retreat from the bustling city outside. Whether you're here to
-                  relax by our rooftop pool, savor delectable cuisine at our
-                  renowned restaurant, or host a successful corporate event in
-                  our state-of-the-art meeting facilities, [Hotel Name] caters
-                  to your every need. Immerse yourself in the cultural riches of
-                  Abuja, as our prime location grants you easy access to iconic
-                  landmarks, vibrant markets, and a plethora of entertainment
-                  options. After a day of exploration, return to the comfort of
-                  your elegantly appointed room and unwind in blissful
-                  tranquility.
+                At Isioma Real Estate Management, we understand that everyone desires to make a smart investment in real estate. That's why we've carefully selected a range of properties that come with a fantastic 10% discount. These properties are ideal for savvy buyers who want to save while securing the home of their dreams. Whether you're looking for a cozy apartment, a spacious family home, or an investment property, our 10% discount section has something for everyone.
+                <br/><br/>
+                Browse through our listings and explore a variety of properties that boast excellent locations, modern amenities, and exceptional value. Don't miss out on this limited-time opportunity to make your homeownership dreams a reality.
+                <br/><br/>
+                Don't wait; these hot deals won't be around forever. Contact us today to schedule a viewing or get more information on our 10% and 25% discount sections. Your dream property is just a click or a call away with Isioma Real Estate Management.
                 </h5>
       
             </div>
@@ -206,7 +193,7 @@ const closeSuccessMessage = () => {
               <img src={images.picture.wow} width={250} height={200} />
             </div>
           </div>
-          <div className="flex flex-row justify-between max-lg:flex-col">
+          <div className="flex flex-row justify-between items-center max-lg:flex-col">
             <div className="w-[60%] p-4 mx-4 my-8 max-lg:w-[100%] max-lg:m-1 ">
               <Suspense fallback={<div>Loading...</div>}>
                 <Gallery2 />
@@ -214,23 +201,11 @@ const closeSuccessMessage = () => {
             </div>
             <div className="w-[50%]  p-4 max=lg:p-1 max-lg:w-full">
               <h5>
-                Welcome to our "Hot Deals" section, where you'll find exclusive
-                opportunities to snag incredible real estate deals. Whether
-                you're a first-time buyer, an experienced investor, or someone
-                looking for their dream home, these listings offer unbeatable
-                value in today's competitive market. Don't miss out – act fast,
-                as these deals won't last long! Indulge in our thoughtfully
-                designed rooms and suites, each adorned with modern amenities
-                and stunning views that offer a serene retreat from the bustling
-                city outside. Whether you're here to relax by our rooftop pool,
-                savor delectable cuisine at our renowned restaurant, or host a
-                successful corporate event in our state-of-the-art meeting
-                facilities, [Hotel Name] caters to your every need. Immerse
-                yourself in the cultural riches of Abuja, as our prime location
-                grants you easy access to iconic landmarks, vibrant markets, and
-                a plethora of entertainment options. After a day of exploration,
-                return to the comfort of your elegantly appointed room and
-                unwind in blissful tranquility.
+              For those seeking an extraordinary bargain, Isioma Real Estate Management offers a once-in-a-lifetime opportunity in our 25% discount section. These properties represent unparalleled value and are perfect for investors or homebuyers looking for an incredible deal. With a quarter off the original price, you can make significant savings while acquiring a remarkable piece of real estate.
+              <br/><br/>
+              Our 25% discount section includes an array of properties, from luxurious villas to high-rise condos, all with substantial discounts. These listings won't last long, so act swiftly to secure your dream property at an unbelievable price.
+              <br/><br/>
+              At Isioma Real Estate Management, we're dedicated to helping you find the perfect property that suits your needs and budget. Our Hot Deals section is designed to provide you with outstanding opportunities in the real estate market, and our experienced team is ready to guide you through the buying process.
               </h5>
             </div>
           </div>
@@ -266,25 +241,24 @@ const closeSuccessMessage = () => {
         >
           <h1 className="text-white">Testimonials</h1>
         </div>
-        <div className=" m-4 flex flex-row justify-between flex-wrap gap-[20px] max:lg-m-1 ">
+        <div className=" m-4 flex flex-row justify-between flex-wrap gap-[20px] max-lg:m-1 ">
           {images.testimonials.map((image, index) => {
             return (
               <div
                 key={index + 1}
-                className="flex flex-col  gap-4  p-4 m-6 w-[fit-content] flex-wrap max:lg-m-1 max-xl:p-2 bg-[#A36671] shadow-lg rounded-lg"
+                className="flex flex-col  gap-4  p-4 m-6 w-[40%] max-lg:w-[100%] flex-wrap max:lg-m-0 max-lg:p-2 bg-[#A36671] shadow-lg rounded-lg"
               >
-                <div className="flex flex-row gap-4 items-center  ">
-                  <div className="w-[fit-content]">
+                <div className="flex flex-row justify-between items-center  ">
+                  <div className="w-[50%]">
                     <img
                       src={image.image}
-                      width={250}
-                      height={250}
+                      
                     />
                   </div>
 
-                  <div className="text-center"><h4 className="w-[150px] max-lg:w-full">{image.text}</h4></div>
+                  <div className="text-center w-[45%] max-lg:w-full"><h6 className="">{image.text}</h6></div>
                 </div>
-                <div className="flex flex-row gap-4 justify-center">
+                <div className="flex flex-row gap-8 justify-center">
                   <h3>
                     <strong>{image.name}</strong>
                   </h3>
