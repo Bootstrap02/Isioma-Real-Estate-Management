@@ -1,8 +1,11 @@
+import homepage from '../assets/homepage.png';
+import homepage1 from '../assets/homepage1.png';
+
 const picture = {
   home : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455059/Isioma_project/work/home_jclknt.jpg',
   menu : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697637015/Isioma_project/work/menu_e3d5xf.png',
-  homepage : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455063/Isioma_project/work/homepage_hsyb8g.png',
-  homepage1 : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455063/Isioma_project/work/homepage1_fziyyc.png',
+  homepage : homepage,
+  homepage1 : homepage1,
   facebook : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455019/Isioma_project/work/facebook_egls0e.png',
   family : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455020/Isioma_project/work/family_g7hhxc.webp',
   logo : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697637014/Isioma_project/work/logo_la1hww.png',
