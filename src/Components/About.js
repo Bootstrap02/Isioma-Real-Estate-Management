@@ -37,7 +37,7 @@ const About = () => {
         </div>
         <div className="mx-6 w-[50%] max-lg:w-[80%] my-8">
           <strong>
-            At Isioma Real-Estate Agency, we don't just sell properties;
+            At CCHomes, we don't just sell properties;
           </strong>
           <br />
           <br />
@@ -71,10 +71,10 @@ const About = () => {
           local area insights, we're here to assist you beyond the transaction.
           <br />
           <br />
-          <strong> Experience the Isioma Real Estate Agency Difference:</strong>
+          <strong> Experience the CCHomes Difference:</strong>
           <br />
           <br />
-          &nbsp; &nbsp; When you choose Isioma Real-Estate Agency, you're not
+          &nbsp; &nbsp; When you choose CCHomes, you're not
           just a client; you become a part of our legacy. Experience real estate
           services that are defined by passion, professionalism, and a pursuit
           of perfection. Let us be your trusted partner in your real estate

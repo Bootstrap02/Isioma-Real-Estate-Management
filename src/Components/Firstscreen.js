@@ -101,7 +101,7 @@ const closeSuccessMessage = () => {
               }}
             >
               <p className="w-[80%]  flex flex-wrap wordwrap">
-                Welcome to Isioma Real-Estate-Management Holdings Your Oasis of
+                Welcome to CCHomes Holdings Your Oasis of
                 Luxury and Comfort!
               </p>
             </div>
@@ -130,7 +130,7 @@ const closeSuccessMessage = () => {
             </div>
           </div>
         </div>
-        <div className="mx-8 font-bold text-lg text-white  rounded-lg bg-[#000000c4]">
+        <div className="mx-8 font-bold text-lg text-white text-center rounded-lg bg-[#000000c4]">
           Visit us @: 23 rd, Gwagwalada, Abuja, Nigeria.
         </div>
       </div>
@@ -146,7 +146,7 @@ const closeSuccessMessage = () => {
             <div className="text-2xl  max-lg:w-[100%] p-4 ">
               <h2>
                 <strong>
-                Discover Exclusive Hot Deals with Isioma Real Estate Management.
+                Discover Exclusive Hot Deals with CCHomes.
                 </strong>
               </h2>
             </div>
@@ -164,11 +164,11 @@ const closeSuccessMessage = () => {
             <div>
     
                 <h5 className="w-[80%] max-lg:w-full">
-                At Isioma Real Estate Management, we understand that everyone desires to make a smart investment in real estate. That's why we've carefully selected a range of properties that come with a fantastic 10% discount. These properties are ideal for savvy buyers who want to save while securing the home of their dreams. Whether you're looking for a cozy apartment, a spacious family home, or an investment property, our 10% discount section has something for everyone.
+                At CCHomes, we understand that everyone desires to make a smart investment in real estate. That's why we've carefully selected a range of properties that come with a fantastic 10% discount. These properties are ideal for savvy buyers who want to save while securing the home of their dreams. Whether you're looking for a cozy apartment, a spacious family home, or an investment property, our 10% discount section has something for everyone.
                 <br/><br/>
                 Browse through our listings and explore a variety of properties that boast excellent locations, modern amenities, and exceptional value. Don't miss out on this limited-time opportunity to make your homeownership dreams a reality.
                 <br/><br/>
-                Don't wait; these hot deals won't be around forever. Contact us today to schedule a viewing or get more information on our 10% and 25% discount sections. Your dream property is just a click or a call away with Isioma Real Estate Management.
+                Don't wait; these hot deals won't be around forever. Contact us today to schedule a viewing or get more information on our 10% and 25% discount sections. Your dream property is just a click or a call away with CCHomes.
                 </h5>
       
             </div>
@@ -201,11 +201,11 @@ const closeSuccessMessage = () => {
             </div>
             <div className="w-[50%]  p-4 max=lg:p-1 max-lg:w-full">
               <h5>
-              For those seeking an extraordinary bargain, Isioma Real Estate Management offers a once-in-a-lifetime opportunity in our 25% discount section. These properties represent unparalleled value and are perfect for investors or homebuyers looking for an incredible deal. With a quarter off the original price, you can make significant savings while acquiring a remarkable piece of real estate.
+              For those seeking an extraordinary bargain, CCHomes offers a once-in-a-lifetime opportunity in our 25% discount section. These properties represent unparalleled value and are perfect for investors or homebuyers looking for an incredible deal. With a quarter off the original price, you can make significant savings while acquiring a remarkable piece of real estate.
               <br/><br/>
               Our 25% discount section includes an array of properties, from luxurious villas to high-rise condos, all with substantial discounts. These listings won't last long, so act swiftly to secure your dream property at an unbelievable price.
               <br/><br/>
-              At Isioma Real Estate Management, we're dedicated to helping you find the perfect property that suits your needs and budget. Our Hot Deals section is designed to provide you with outstanding opportunities in the real estate market, and our experienced team is ready to guide you through the buying process.
+              At CCHomes, we're dedicated to helping you find the perfect property that suits your needs and budget. Our Hot Deals section is designed to provide you with outstanding opportunities in the real estate market, and our experienced team is ready to guide you through the buying process.
               </h5>
             </div>
           </div>
@@ -219,7 +219,7 @@ const closeSuccessMessage = () => {
           Why work with Us
         </h1>
         <h3 className=" p-4">
-          At Isioma Real-estate-Management, we understand that buying or selling
+          At CCHomes, we understand that buying or selling
           a property is one of the most significant financial decisions you'll
           make in your lifetime. That's why we're committed to making this
           journey as seamless and rewarding as possible. With over 4 years of

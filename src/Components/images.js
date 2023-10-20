@@ -8,7 +8,7 @@ const picture = {
   homepage1 : homepage1,
   facebook : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455019/Isioma_project/work/facebook_egls0e.png',
   family : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455020/Isioma_project/work/family_g7hhxc.webp',
-  logo : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697637014/Isioma_project/work/logo_la1hww.png',
+  logo : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697829060/Isioma_project/work/logo_y0zqrk.png',
   hotel : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455061/Isioma_project/work/hotel_rac8ha.jpg',
   hotel1 : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455062/Isioma_project/work/hotel1_rmsfc6.jpg',
   houseA1 : 'https://res.cloudinary.com/dneejvhch/image/upload/v1697455062/Isioma_project/work/houseA1_tqrhkp.jpg',
@@ -164,7 +164,7 @@ const Houses = [
     price: "NGN 350,000,000",
     location: "Maitama, Abuja",
     image: picture.gallery5,
-    description:"8 bedroom, 2 sittin rooms Mansion with 2 BQ rooms Installed solar light. Land Size 1500Sam, C of O guaranteed ",
+    description:"8 bedroom, 2 sitting rooms Mansion with 2 BQ rooms Installed solar light. Land Size 1500Sam, C of O guaranteed ",
     film: picture.gallery5,
     photos: [picture.gallery5, picture.houseY1, picture.houseQ, picture.houseH1],
   },
@@ -223,38 +223,38 @@ const testimonials = [
   {
     name: "Johnson Okafor",
     title: "Surgeon",
-    text:   "Working with Isioma Real Estate Management was a game-changer for my projects. Their attention to detail and commitment to finding the perfect location exceeded my expectations."
+    text:   "Working with CCHomes was a game-changer for my projects. Their attention to detail and commitment to finding the perfect location exceeded my expectations."
     ,
     image: picture.johnson,
   },
   {
     name: " John Faleke",
     title: "Real Estate Developer",
-    text: "I couldn't be happier with my investment property from Isioma Real Estate Management. The team's expertise in the market helped me make an informed decision. Their professionalism made the process smooth.",
+    text: "I couldn't be happier with my investment property from CCHomes. The team's expertise in the market helped me make an informed decision. Their professionalism made the process smooth.",
     image: picture.john,
   },
   {
     name: "David and Michelle Okechukwu",
     title: "Small Business Owners",
-    text:  "We are beyond thrilled with our new business location, thanks to Isioma Real Estate Management. Their team understood our unique business needs and found us a commercial space that perfectly suits our requirements.",
+    text:  "We are beyond thrilled with our new business location, thanks to CCHomes. Their team understood our unique business needs and found us a commercial space that perfectly suits our requirements.",
     image: picture.couples,
   },
   {
     name: " Linda Ikpama 4",
     title:  "Interior Designer",
-    text: "Isioma Real Estate Management provided exceptional service from start to finish. Their knowledge of the local real estate market made my home buying experience enjoyable. I'm grateful for their assistance.",
+    text: "CCHomes provided exceptional service from start to finish. Their knowledge of the local real estate market made my home buying experience enjoyable. I'm grateful for their assistance.",
     image: picture.linda,
   },
   {
     name: " Michael Ojo",
     title: "Entrepreneur",
-    text:  "Finding my dream home was a breeze with Isioma Real Estate Management. They listened to my requirements and showed me properties that matched my vision perfectly. I am now living in a house that feels tailor-made for me.",
+    text:  "Finding my dream home was a breeze with CCHomes. They listened to my requirements and showed me properties that matched my vision perfectly. I am now living in a house that feels tailor-made for me.",
     image: picture.michael,
   },
   {
     name:  "Chiamaka Godwin",
     title: "Architect",
-    text: "As an architect, I have a keen eye for design and quality. Isioma Real Estate Management not only met but exceeded my standards. The property they helped me find is not only beautiful but also structurally sound.",
+    text: "As an architect, I have a keen eye for design and quality. CCHomes not only met but exceeded my standards. The property they helped me find is not only beautiful but also structurally sound.",
     image: picture.chiamaka,
   },
 ];

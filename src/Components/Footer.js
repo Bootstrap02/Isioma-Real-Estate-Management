@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="text-xl">About Us</div>
           <div>
             <h3 className="w-full">
-            At Isioma Real-estate company, we don't just sell properties; we
+            At CCHomes, we don't just sell properties; we
             craft dreams into reality. With an unwavering commitment to
             excellence and a passion for perfection, we redefine the real estate
             experience. Established on the pillars of integrity, trust, and
