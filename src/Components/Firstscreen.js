@@ -46,7 +46,7 @@ const closeSuccessMessage = () => {
 
   return (
     <div className="  w-[100%] justify-center items-center flex flex-col ">
-      <div className=" flex  flex-col" style={backgroundImageStyle}>
+      <div className=" flex   w-[100%] flex-col" style={backgroundImageStyle}>
       <div className="mb-[12rem]">
       <Suspense  fallback={<div>Loading...</div>}>
         <Nav />
